@@ -860,7 +860,7 @@ html,body{
         </div>
       </div>
 
-      <!-- Tombol Ajukan Verifikasi -->
+      <!-- Tombol Ajukan Verifikasi 
       <?php if ($persen == 100 && $profil['status_verifikasi'] == "Belum Diverifikasi") { ?>
         <div style="margin-bottom: 25px;">
           <a href="?halaman=profile#verifikasi" class="btn btn-success"
@@ -868,7 +868,7 @@ html,body{
             <i class="fa fa-send"></i> Ajukan Verifikasi
           </a>
         </div>
-      <?php } ?>
+      <?php } ?> -->
 
       <!-- Info Cards (Modern Style) -->
       <div class="info-cards">
