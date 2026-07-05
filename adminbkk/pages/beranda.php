@@ -863,7 +863,7 @@ html,body{
       <!-- Tombol Ajukan Verifikasi -->
       <?php if ($persen == 100 && $profil['status_verifikasi'] == "Belum Diverifikasi") { ?>
         <div style="margin-bottom: 25px;">
-          <a href="?halaman=proses_ajukan_verifikasi" class="btn btn-success"
+          <a href="?halaman=profile#verifikasi" class="btn btn-success"
             style="border-radius:12px;padding:12px 24px;font-weight:600;box-shadow:0 4px 12px rgba(16, 185, 129, 0.3);">
             <i class="fa fa-send"></i> Ajukan Verifikasi
           </a>
