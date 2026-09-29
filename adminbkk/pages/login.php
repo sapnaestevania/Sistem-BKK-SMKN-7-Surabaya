@@ -98,9 +98,9 @@ session_destroy();
 
     if (isset($_POST['btnLogin'])) {
         $sql_login = "SELECT * FROM user WHERE username='".$_POST['txtnis']."' AND password='".$_POST['txtpassword']."'";
-        $query_login = mysqli_query($konek, $sql_login);
-        $data_login = mysqli_fetch_array($query_login,MYSQLI_BOTH);
-        $jumlah_login = mysqli_num_rows($query_login);
+        $query_login = mysqli_query($konek, $sql_login);  /* Digunakan untuk menjalankan query SQL ke database menggunakan koneksi yang sudah dibuat sebelumnya. */
+        $data_login = mysqli_fetch_array($query_login,MYSQLI_BOTH); /* Digunakan untuk mengambil data hasil query sehingga setiap kolom seperti username, nama, dan level dapat digunakan pada program. */
+        $jumlah_login = mysqli_num_rows($query_login);  /* Digunakan untuk menghitung jumlah data yang ditemukan. Jika hasilnya satu atau lebih berarti username dan password cocok. */
         
         if ($jumlah_login >=1 ){
             session_start();
